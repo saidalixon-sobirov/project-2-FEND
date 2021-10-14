@@ -1,0 +1,153 @@
+
+body {
+    background: linear-gradient(0deg, #fff 0%, #bac7b9 100%);
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    color: #000;
+}
+
+
+
+h1 {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 3em;
+    margin: 2em 1rem;
+}
+
+@media only screen and (min-width: 35em){
+    h1 {
+        font-size: 7em;
+        margin: 2em 4rem 1em;
+        text-shadow: 5px 5px 10px #001833;
+    }
+}
+
+h2 {
+    border-bottom: 1px solid #cc1;
+    font-family: 'Oxygen', Sans-Serif;
+    font-size: 3em;
+    color: #000;
+}
+
+p {
+    line-height: 1.6em;
+    color: #2b2b2b;
+}
+
+
+main {
+    margin: 10vh 1em 10vh;
+}
+
+.main-hero {
+    min-height: 40vh;
+    padding-top: 3em;
+}
+
+section {
+    position: relative;
+    min-height: 80vh;
+}
+
+
+
+
+
+.navbar__menu ul {
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.menu__link {
+    display: block;
+    padding: 1em;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #001833;
+    border-left: 2px solid whitesmoke;
+}
+
+@media (max-width: 510px) {
+    .menu__link {
+        font-size: 0.7em;
+    }
+}
+
+.menu__link:hover {
+    background: green;
+    color: #fff;
+    transition: ease 0.3s all;
+    cursor: pointer;
+}
+
+.active-nav {
+    background-color: #bcf5c2;
+}
+
+.page__header {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    box-shadow: 0 5px 10px 2px rgba(0, 0, 0, .5);
+}
+
+.far {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    display: block;
+    box-shadow: 1px 1px 2px #001833;
+}
+
+.far.hide {
+    display: none;
+}
+
+.page__footer {
+    background: #001833;
+    padding: 1em 1em;
+}
+
+.page__footer p{
+    color: #fff;
+    font-size: 1em;
+    text-align: center;
+}
+
+
+.landing__container {
+    padding: 1em;
+    text-align: left;
+}
+
+@media only screen and (min-width: 35em){
+    .landing__container {
+        max-width: 50em;
+        padding: 4em;
+    }
+}
+
+section:nth-of-type(even) .landing__container {
+    margin-right: 0;
+    margin-left: auto;
+    text-align: right; 
+}
+
+section.active-section {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+section.active-section h2 {
+    text-shadow: 3px 3px 5px #001833;
+}
+
+section.active-section p {
+    color: #3b3b3b;
+}
